@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Administrador</title>
+	<meta charset="utf-8">
+  <meta lang="es">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div style="padding-top: 5em;">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container">
+    		<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="navbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>                        
+      		</button>
+      		<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="menu">
+   			<ul class="nav navbar-nav">
+        			<!-- <li class="active"><a href="index.php"> Inicio</a></li> -->
+        			<li><a href="productos.html"><span class="glyphicon glyphicon-tag"></span> Productos</a></li>
+        			<li><a href="usuario.html"><span class="glyphicon glyphicon-user"></span> Usuario</a></li>
+        			<li><a href="ventas.html"><span class="glyphicon glyphicon-shopping-cart"></span> Ventas</a></li>
+     				<li class="active"><a href="admin.html"><span class="glyphicon glyphicon-cog"></span> Admministrador</a></li>
+    			</ul>
+    			<ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Oscar Mondragon Alcantara</a></li>
+            <li><a href="#"><strong>Jarceria Ruby</strong> </a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Salir</a></li>
+          </ul>
+    			<!-- <ul class="nav navbar-nav navbar-right">
+        			<li><a href="registra.html"><span class="glyphicon glyphicon-user"></span> Registrar</a></li>
+        			<li><a href="acceso.html"><span class="glyphicon glyphicon-log-in"></span> Acceso</a></li>
+      		</ul> -->
+     		</div>
+     	</div>
+   </nav>
+</div>
+<div  class="container text-center botones" >
+	<div class="row">
+  		<div class="col-sm-3">
+  			<!-- <h4 class=" text-center text-danger"><strong>Productos</strong></h4> -->
+  			<a title="Productos" href="productos.html"><img src="images/productos.png" class="img img-circle" width="120" height="120"></a>
+  			
+      		<p><br><a href="productos.html" type="buttom" class="btn btn-primary ">Productos</a></p>
+  		</div>
+  		<div class="col-sm-3">
+  			<!-- <h4 class="text-danger"><stron>Usuarios</strong></h4> -->
+  			<a title="Usuarios" href="admin_usuarios.html"><img src="images/usuarios.png" class="img img-circle" width="120" height="120"></a>
+      		<p><br><a href="admin_usuarios.html" type="buttom" class="btn btn-primary">Usuarios</a></p>
+  		</div>  	
+  		<div class="col-sm-3">
+  			<!-- <h4 class="text-danger"><strong>Ventas</strong></h4> -->
+  			<a title="Ventas" href="admin_ventas.html"><img src="images/ventas.png" class="img img-circle" width="120" height="120"></a>
+      		<p><br><a href="admin_ventas.html" type="buttom" class="btn btn-primary">Ventas</a></p>
+  		</div>
+  		<div class="col-sm-3">
+  			<!-- <h4 class="text-danger"><strong>Admin</strong></h4> -->
+  			<a title="Admin" href="info_admin.html"><img src="images/admin.png" class="img img-circle" width="120" height="120"></a>
+  			<p><br><a href="info_admin.html" type="buttom" class="btn btn-primary">Admin</a></p>
+  		</div>
+  	</div>
+</div>
+</body>
+</html>

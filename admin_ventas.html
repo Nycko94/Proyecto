@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ventas</title>
+<meta charset="utf-8">
+  <meta lang="es">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div style="padding-top: 5em;">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container">
+    		<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="navbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>                        
+      		</button>
+      		<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="menu">
+   			<ul class="nav navbar-nav">
+        			<!-- <li class="active"><a href="index.php"> Inicio</a></li> -->
+        			<li><a href="productos.html"><span class="glyphicon glyphicon-tag"></span> Productos</a></li>
+        			<li><a href="usuario.html"><span class="glyphicon glyphicon-user"></span> Usuario</a></li>
+        			<li><a href="ventas.html"><span class="glyphicon glyphicon-shopping-cart"></span> Ventas</a></li>
+     				<li class="active"><a href="admin.html"><span class="glyphicon glyphicon-cog"></span> Admministrador</a></li>
+    			</ul>
+    			<ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Oscar Mondragon Alcantara</a></li>
+            <li><a href="#"><strong>Jarceria Ruby</strong> </a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Salir</a></li>
+          </ul>
+    			<!-- <ul class="nav navbar-nav navbar-right">
+        			<li><a href="registra.html"><span class="glyphicon glyphicon-user"></span> Registrar</a></li>
+        			<li><a href="acceso.html"><span class="glyphicon glyphicon-log-in"></span> Acceso</a></li>
+      		</ul> -->
+     		</div>
+     	</div>
+   </nav>
+</div>
+<div class="container">
+	<form class="form-inline">
+  			<div class="form-group">
+    			<label for="search">Productos:</label>
+    			<input type="text" class="form-control" id="productos">
+  			</div>
+  			<div class="form-group">
+    			<label for="search">En Existencia:</label>
+    			<input type="text" class="form-control" id="stack">
+  			</div>
+  			<div class="form-group">
+    			<label for="search">Fecha de Venta:</label>
+    			<input type="date" class="form-control" id="productos">
+  			</div>
+  			<button type="submit" class="btn btn-default">Buscar</button>
+		</form>
+		<div class="row">
+		<div class="pull-right">
+			<button class="btn btn-success"><span class="glyphicon glyphicon-download"></span></button>
+		</div>
+	</div>
+	<div class="row">
+		<table class="table table-hover">
+			<thead>
+				<th>Producto</th>
+				<th>Descripcion</th>
+				<th>Stack</th>
+				<th>Fecha de Venta</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Escoba</td>
+					<td>Escoba marca perico</td>
+					<td>8</td>
+					<th>12/01/18</th>
+				</tr>
+				<tr>
+					<td>Esponja</td>
+					<td>Esponja marca scotch brite</td>
+					<td class="text-danger">5</td>
+					<th>15/01/18</th>
+				</tr>
+			</tbody>
+		</table>	
+	</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Productos</title>
+	<meta charset="utf-8">
+  <meta lang="es">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+</head>
+<body>
+<div style="padding-top: 5em;">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container">
+    		<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="navbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>                        
+      		</button>
+      		<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="menu">
+   			<ul class="nav navbar-nav">
+        			<!-- <li class="active"><a href="index.php"> Inicio</a></li> -->
+        			<li class="active"><a href="productos.html"><span class="glyphicon glyphicon-tag"></span> Productos</a></li>
+        			<li><a href="usuario.html"><span class="glyphicon glyphicon-user"></span> Usuario</a></li>
+        			<li><a href="ventas.html"><span class="glyphicon glyphicon-shopping-cart"></span> Ventas</a></li>
+     				<li><a href="admin.html"><span class="glyphicon glyphicon-cog"></span> Admministrador</a></li>
+    			</ul>
+    			<ul class="nav navbar-nav navbar-right">
+    				<li><a href="#">Oscar Mondragon Alcantara</a></li>
+    				<li><a href="#"><strong>Jarceria Ruby</strong> </a></li>
+    				<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Salir</a></li>
+    			</ul>
+    			<!-- <ul class="nav navbar-nav navbar-right">
+        			<li><a href="registra.html"><span class="glyphicon glyphicon-user"></span> Registrar</a></li>
+        			<li><a href="acceso.html"><span class="glyphicon glyphicon-log-in"></span> Acceso</a></li>
+      		</ul> -->
+     		</div>
+     	</div>
+   </nav>
+</div>
+<div class="container">
+	<div class="row pull-right">
+		<button type="button" class="btn btn-md btn-primary" data-target="#myModal" data-toggle="modal"><span class="glyphicon glyphicon-plus-sign"></span> Agregar</button>
+		<hr style="color: #E6E6E6; border: none;">
+	</div>
+	
+	<div class="row">
+		<!-- <form class="form-inline">
+  			<div class="form-group">
+    			<label for="search">Buscar:</label>
+    			<input type="text" class="form-control" id="search">
+  			</div>
+  			<button type="submit" class="btn btn-default">Buscar</button>
+		</form> -->
+		<table id="tabla" class="table table-hover">
+			<thead>
+					<th>Imagen</th>
+					<th>Código de Barras</th>
+					<th>Produto</th>
+					<th>Descripción</th>
+					<th>Precio</th>
+					<th>Stack</th>
+					<th>Acción</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td><img class="img-circle" src="productos/esponja.jpg" width="50" height="50"></td>
+					<td>456897</td>
+					<td>Esponja</td>
+					<td>Esponja scotch Brite</td>
+					<td>$13</td>
+					<td>15</td>
+					<td><button class="btn btn-success btn-md"><span class="glyphicon glyphicon-pencil"></span></button>
+						<button class="btn btn-danger btn-md"><span class="glyphicon glyphicon-remove"></span></button>
+					</td>
+				</tr>
+				<tr>
+					<td><img class="img-circle" src="productos/escobaperico.png" width="50" height="50"></td>
+					<td>561234</td>
+					<td>Escoba</td>
+					<td>Escoba marca Perico</td>
+					<td>$35</td>
+					<td>10</td>
+					<td><button class="btn btn-success btn-md"><span class="glyphicon glyphicon-pencil"></span></button>
+						<button class="btn btn-danger btn-md"><span class="glyphicon glyphicon-remove"></span></button>
+					</td>
+				</tr>
+				<tr>
+					<td><img class="img-circle" src="productos/cubeta.jpg" width="50" height="50"></td>
+					<td>539725</td>
+					<td>Cubeta</td>
+					<td>Cubeta marca Cubetaxo</td>
+					<td>$23</td>
+					<td>30</td>
+					<td><button class="btn btn-success btn-md"><span class="glyphicon glyphicon-pencil"></span></button>
+						<button class="btn btn-danger btn-md"><span class="glyphicon glyphicon-remove"></span></button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        	<div class="modal-header">
+          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+          		<h3 class="modal-title text-center text-primary"><strong>Agregar Producto</strong></h3>
+        	</div>
+        	<div class="modal-body">
+        		<form enctype="multipart/form-data" class="form-horizontal" action="subir-archivos.php" method="POST" onsubmit="return validaForm(this)">
+					<div class="form-group">
+						<label for="barcode" class="col-md-4 control-label">Código de Barras: </label>
+						<div class="col-md-6">
+							<input id="barcode" name="barcode" type="text" class="form-control" placeholder="Codigo de Barras" maxlength="10" autofocus>
+							<span class="help-block"></span>      						
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="precio" class="col-md-4 control-label">Precio: </label>
+						<div class="col-md-6">
+							<input id="precio" name="precio" type="text" class="form-control" placeholder="Precio" maxlength="7">
+							<span class="help-block"></span>      						
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-4 control-label">Descripción: </label>
+						<div class="col-md-6">
+      						<textarea class="form-control" rows="5" name="descripcion" id="descripcion" maxlength="150" placeholder="Ingrese Descripción"></textarea>
+      						<span class="help-block"></span> 
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-4 control-label">Imagen: </label>
+						<div class="col-md-6">
+                        	<input type="file" class="form-control" name="image" id="image"><br>
+							<span class="help-block"></span>
+						</div>
+					</div>
+        	</div><!--Modal Body-->
+        	<div class="modal-footer">
+        		<input id="btn_subir" type="submit" class="btn btn-success" value="Registrar" />
+				<a type="button" class="btn btn-default" href="productos.html"> Cancelar </a>
+				</form>
+        	</div>
+      </div>
+    </div>
+</div><!--container-->
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Usuarios</title>
+	<meta charset="utf-8">
+  <meta lang="es">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div style="padding-top: 5em;">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container">
+    		<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="navbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>                        
+      		</button>
+      		<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="menu">
+   			<ul class="nav navbar-nav">
+        			<!-- <li class="active"><a href="index.php"> Inicio</a></li> -->
+        			<li><a href="productos.html"><span class="glyphicon glyphicon-tag"></span> Productos</a></li>
+        			<li class="active"><a href="usuario.html"><span class="glyphicon glyphicon-user"></span> Usuario</a></li>
+        			<li><a href="ventas.html"><span class="glyphicon glyphicon-shopping-cart"></span> Ventas</a></li>
+     				<li><a href="admin.html"><span class="glyphicon glyphicon-cog"></span> Admministrador</a></li>
+    			</ul>
+    			<ul class="nav navbar-nav navbar-right">
+    				<li><a href=""><strong>Jarceria Ruby</strong> </a></li>
+    			</ul>
+    			<!-- <ul class="nav navbar-nav navbar-right">
+        			<li><a href="registra.html"><span class="glyphicon glyphicon-user"></span> Registrar</a></li>
+        			<li><a href="acceso.html"><span class="glyphicon glyphicon-log-in"></span> Acceso</a></li>
+      		</ul> -->
+     		</div>
+     	</div>
+   </nav>
+</div>
+<div class="container">
+	<table class="table table-hover">
+		<thead>
+			<th>Imagen</th>
+			<th>Nombre</th>
+			<th>Contraseña</th>
+			<th>Telefono</th>
+			<th>Rol</th>
+			<th>Accion</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Imagen</td>
+				<td>Oscar Mondragon Alcantara</td>
+				<td>123456789</td>
+				<td>7129876532</td>
+				<td>
+					<div class="form-group">
+  						<select class="form-control" id="sel1">
+    					<option>Admin</option>
+    					<option>Usuario</option>
+  						</select>
+					</div>
+				</td>
+				<td><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button>
+					<button class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
+				</td>
+			</tr>
+			<tr>
+				<td>Imagen</td>
+				<td>Diego Nicolas MArtinez</td>
+				<td>xdxdxd</td>
+				<td>712345689</td>
+				<td>
+					<div class="form-group">
+  						<select class="form-control" id="sel1">
+    					<option>Admin</option>
+    					<option>Usuario</option>
+  						</select>
+					</div>
+				</td>
+				<td><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button>
+					<button class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>

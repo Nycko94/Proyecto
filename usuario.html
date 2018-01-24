@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Usuario</title>
+	<meta charset="utf-8">
+  <meta lang="es">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div style="padding-top: 5em;">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container">
+    		<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="navbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>                        
+      		</button>
+      		<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="menu">
+   			<ul class="nav navbar-nav">
+        			<!-- <li class="active"><a href="index.php"> Inicio</a></li> -->
+        			<li><a href="productos.html"><span class="glyphicon glyphicon-tag"></span> Productos</a></li>
+        			<li class="active"><a href="usuario.html"><span class="glyphicon glyphicon-user"></span> Usuario</a></li>
+        			<li><a href="ventas.html"><span class="glyphicon glyphicon-shopping-cart"></span> Ventas</a></li>
+     				<li><a href="admin.html"><span class="glyphicon glyphicon-cog"></span> Admministrador</a></li>
+    			</ul>
+    			<ul class="nav navbar-nav navbar-right">
+    				<li><a href="#">Oscar Mondragon Alcantara</a></li>
+    				<li><a href="#"><strong>Jarceria Ruby</strong> </a></li>
+    				<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Salir</a></li>
+    			</ul>
+    			<!-- <ul class="nav navbar-nav navbar-right">
+        			<li><a href="registra.html"><span class="glyphicon glyphicon-user"></span> Registrar</a></li>
+        			<li><a href="acceso.html"><span class="glyphicon glyphicon-log-in"></span> Acceso</a></li>
+      		</ul> -->
+     		</div>
+     	</div>
+   </nav>
+</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<form>
+					<div><img class="profile-img" src="images/user.png?sz=120" alt=""></div>
+					<div class="form-group">
+						<label for="name" class="col-md-4 control-label">Nombre: </label>
+						<div class="col-md-6">
+							<input id="name" name="name" type="text" class="form-control" placeholder="Nombre Completo"  autofocus><br>	
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="password" class="col-md-4 control-label">Contraseña: </label>
+						<div class="col-md-6">
+							<input id="password" name="password" type="password" class="form-control" placeholder="Contraseña"><br>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="phone" class="col-md-4 control-label">Teléfono: </label>
+						<div class="col-md-6">
+							<input id="phone" name="phone" type="password" class="form-control" placeholder="Telefono"><br>	
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="image" class="col-md-4 control-label">Imagen: </label>
+						<div class="col-md-6">
+							<input id="image" name="image" type="file" class="form-control"><br>	
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-6 col-md-offset-4">	
+							<input id="btn_subir" type="submit" class="btn btn-success" value="Actualizar" />
+							<a type="button" class="btn btn-default" href="productos.html"> Cancelar </a>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<h3 class="text-center">Estas son tus ventas</h3><br>
+				<p class="text-center">Oscar Mondragon Alcantara</p>
+				<table class="table table-hover">
+					<thead>
+						<th>Fecha</th>
+						<th>Cantidad</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>10/01/18</td>
+							<td>$500</td>
+						</tr>
+						<tr>
+							<td>15/01/18</td>
+							<td>$600</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+<style type="text/css">
+    .profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+</style>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ventas</title>
+	<meta charset="utf-8">
+  <meta lang="es">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div style="padding-top: 5em;">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container">
+    		<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="navbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>                        
+      		</button>
+      		<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="menu">
+   			<ul class="nav navbar-nav">
+        			<!-- <li class="active"><a href="index.php"> Inicio</a></li> -->
+        			<li><a href="productos.html"><span class="glyphicon glyphicon-tag"></span> Productos</a></li>
+        			<li><a href="usuario.html"><span class="glyphicon glyphicon-user"></span> Usuario</a></li>
+        			<li class="active"><a href="ventas.html"><span class="glyphicon glyphicon-shopping-cart"></span> Ventas</a></li>
+     				<li><a href="admin.html"><span class="glyphicon glyphicon-cog"></span> Admministrador</a></li>
+    			</ul>
+    			<ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Oscar Mondragon Alcantara</a></li>
+            <li><a href="#"><strong>Jarceria Ruby</strong> </a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Salir</a></li>
+          </ul>
+    			<!-- <ul class="nav navbar-nav navbar-right">
+        			<li><a href="registra.html"><span class="glyphicon glyphicon-user"></span> Registrar</a></li>
+        			<li><a href="acceso.html"><span class="glyphicon glyphicon-log-in"></span> Acceso</a></li>
+      		</ul> -->
+     		</div>
+     	</div>
+   </nav>
+</div>
+<div class="container">
+	<div class="row">
+		<form class="form-inline">
+  			<div class="form-group">
+    			<label for="search">Buscar:</label>
+    			<input type="text" class="form-control" id="search">
+  			</div>
+  			<button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span></button>
+		</form>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<table class="table table-responsive">
+			<thead>
+				<th>Producto</th>
+				<th>Descripción</th>
+				<th>Precio</th>
+				<th>Cantidad</th>
+				<th>Importe</th>
+				<th></th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Escoba</td>
+					<td>Escoba marca perico</td>
+					<td>35</td>
+					<td><input type="text" name="cantidad" class="text-center" value="6"></td>
+					<td>210</td>
+					<td><button class="btn btn-danger"><span class="glyphicon glyphicon-minus-sign"></span></button></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>Total: $35</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="col-md-10 col-md-offset-5">
+			<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Vender</button>
+		</div>
+	</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        	<div class="modal-header">
+          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+          		<h3 class="modal-title text-center text-primary"><strong>Venta de producto No. 1</strong></h3>
+        	</div>
+        	<div class="modal-body">
+        		<div class="col-md-6">
+        			<h4 class="text-center text-danger"><strong>Cantidad a Cobrar</strong></h4>
+          			<h2 class="text-center">Total: <strong>$240</strong></h2>
+          			<form class="form-horizontal">
+          				<label for="cobro" class="col-md-4 control-label">Pago con: </label>
+						<div class="col-md-6">
+							<input type="text" class="form-control" name="cobro" id="cobro" autofocus><br>
+						</div>
+						<label for="cambio" class="col-md-4 control-label">Su cambio: </label>
+						<div class="col-md-6">
+							<input type="text" class="form-control" name="cambio" id="cambio"><br>
+						</div>
+					</form>
+        		</div>
+        		<div class="col-md-6">
+        			<button class="btn btn-primary opcion1">Imprimir ticket</button><br><br>
+        			<button class="btn btn-success opcion2">Cobrar sin imprimir ticket</button><br><br>
+        			<button type="button" class="btn btn-danger opcion3" data-dismiss="modal">Cancelar</button><br>
+        		</div>
+        	</div><!--Modal Body-->
+        	<div class="modal-footer">
+        		
+        	</div>
+      </div>
+    </div>
+
+
+
+
+
+<!-- <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      	<div class="modal-content">
+        	<div class="modal-header">
+          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+          		<h4 class="modal-title">Venta No. 1</h4>
+        	</div>
+        	<div class="modal-body">
+        		<div class="col-md-6">
+        			<h4 class="text-center">Cantidad a Cobrar</h4>
+          			<h2 class="text-center">Total: <strong>$240</strong></h2>
+          			<form class="form-horizontal">
+          				<label for="cobro" class="col-md-4 control-label">Pago con: </label>
+						<div class="col-md-6">
+							<input type="text" class="form-control" name="cobro" id="cobro" autofocus><br>
+						</div>
+						<label for="cambio" class="col-md-4 control-label">Su cambio: </label>
+						<div class="col-md-6">
+							<input type="text" class="form-control" name="cambio" id="cambio"><br>
+						</div>
+  						
+					</form>
+
+        		</div>
+        		<div class="col-md-6">
+        			<button class="btn btn-primary opcion1">Imprimir ticket</button><br><br>
+        			<button class="btn btn-success opcion2">Cobrar sin imprimir ticket</button><br><br>
+        			<button type="button" class="btn btn-danger opcion3" data-dismiss="modal">Cancelar</button><br>
+        		</div>
+          		
+        	</div>
+        	<div class="modal-footer">
+          		
+        	</div>
+      	</div>
+    </div>
+</div> -->
+
+<style type="text/css">
+	.opcion1, .opcion2, .opcion3 {
+		width: 50%;
+
+	}
+	.modal-footer {
+		border: none;
+	}
+</style>
+</body>
+</html>
