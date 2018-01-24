@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tienda Ruby</title>
+	<meta charset="utf-8">
+  	<meta lang="es">
+  	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div style="padding-top: 5em;">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container">
+    		<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="navbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>                        
+      		</button>
+      		<a class="navbar-brand active" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="menu">
+   			<ul class="nav navbar-nav">
+        			<!-- <li class="active"><a href="index.php"> Inicio</a></li> -->
+        			<li><a href="productos.html"><span class="glyphicon glyphicon-tag"></span> Productos</a></li>
+        			<li><a href="usuario.html"><span class="glyphicon glyphicon-user"></span> Usuario</a></li>
+        			<li><a href="ventas.html"><span class="glyphicon glyphicon-shopping-cart"></span> Ventas</a></li>
+     				<li><a href="admin.html"><span class="glyphicon glyphicon-cog"></span> Admministrador</a></li>
+    			</ul>
+    			<ul class="nav navbar-nav navbar-right">
+    				<li><a href=""><strong>Jarceria Ruby</strong> </a></li>
+    			</ul>
+    			<!-- <ul class="nav navbar-nav navbar-right">
+        			<li><a href="registra.html"><span class="glyphicon glyphicon-user"></span> Registrar</a></li>
+        			<li><a href="acceso.html"><span class="glyphicon glyphicon-log-in"></span> Acceso</a></li>
+      		</ul> -->
+     		</div>
+     	</div>
+   </nav>
+</div>
+      
+   <div class="container">
+	<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+	  	<div class="panel panel-primary">
+	  	<div class="panel-heading"> 
+			 <h3 class="text-center">Acceso a Sistema</h3> </div>
+		 <div class="panel-body">
+			<form name="formSign" class="form-horizontal" enctype="text/plain">
+                <div>
+                    <img class="profile-img" src="images/user.png?sz=120" alt="">
+                </div>
+    			<div class="form-group">
+					<label for="usuario" class="col-md-4 control-label">Usuario: </label>
+					<div class="col-md-6">
+						<input type="text" class="form-control" placeholder="Usuario" name="usuario" id="usuario" autofocus><br>
+					</div>
+                    <label for="password" class="col-md-4 control-label">Contraseña: </label>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" placeholder="Contraseña" name="password" id="password"><br>
+                    </div>
+					<div class="col-md-10 text-right">
+                        <button class="btn btn-primary" type="submit">Entrar</button>
+                        <a href="index.html" class="btn btn-default">Cancelar </a>
+					</div>
+				</div>
+      		</form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<style type="text/css">
+    .profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+</style>
+</body>
+</html>
